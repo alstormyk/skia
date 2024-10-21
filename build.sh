@@ -14,8 +14,7 @@ rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-rpm-ostree install screen vlc 
-# brave-browser
+rpm-ostree install screen vlc brave-browser
 
 #### Example for enabling a System Unit File
 
