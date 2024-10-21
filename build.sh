@@ -16,6 +16,9 @@ rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 # this installs a package from fedora repos
 rpm-ostree install screen qtile-wayland vlc
 
+# remove packages
+rpm-ostree uninstall firefox-langpacks firefox
+
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
