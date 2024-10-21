@@ -14,10 +14,13 @@ rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-rpm-ostree install screen qtile-wayland vlc
+rpm-ostree install -y screen qtile-wayland vlc
 
 # remove packages
-rpm-ostree uninstall firefox-langpacks firefox
+rpm-ostree override remove firefox firefox-langpacks
+
+# clean up packages
+rpm-ostree cleanup -m
 
 #### Example for enabling a System Unit File
 
