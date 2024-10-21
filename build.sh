@@ -6,10 +6,7 @@ RELEASE="$(rpm -E %fedora)"
 
 
 ### Install packages
-cd /etc/yum.repos.d/
-wget https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-rpm-ostree install brave-browser
-cd
+
 
 # Packages can be installed from any enabled yum repo on the image.
 # RPMfusion repos are available by default in ublue main images
