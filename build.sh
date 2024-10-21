@@ -6,10 +6,10 @@ RELEASE="$(rpm -E %fedora)"
 
 
 ### Install packages
-dnf install dnf-plugins-core
-dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-dnf install brave-browser
+cd /etc/yum.repos.d/
+wget https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+rpm-ostree install brave-browser
+cd
 
 # Packages can be installed from any enabled yum repo on the image.
 # RPMfusion repos are available by default in ublue main images
