@@ -17,7 +17,7 @@ rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 rpm-ostree install -y screen qtile-wayland vlc
 
 # remove packages
-rpm-ostree override remove firefox firefox-langpacks
+rpm-ostree override remove gnome*
 
 # clean up packages
 rpm-ostree cleanup -m
