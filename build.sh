@@ -18,7 +18,7 @@ rpm-ostree install qtile-wayland
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
-rpm-ostree remove Thunderbird
+flatpak uninstall org.gnome.Weather
 
 #### Example for enabling a System Unit File
 
