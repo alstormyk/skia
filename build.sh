@@ -13,7 +13,7 @@ RELEASE="$(rpm -E %fedora)"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-rpm-ostree install qtile-wayland bash-color-prompt evtest fastfetch fish firewall-config gcc git-credential-libsecret glow gum hplip krb5-workstation lm_sensors make mesa-libGLU nerd-fonts opendyslexic-fonts playerctl ptyxis pulseaudio-utils python3-pip rclone wl-clipboard
+rpm-ostree install qtile-wayland
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
