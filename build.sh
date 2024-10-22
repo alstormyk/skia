@@ -18,6 +18,8 @@ rpm-ostree install qtile-wayland
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
+rpm-ostree remove Thunderbird
+
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
