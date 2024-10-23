@@ -15,6 +15,7 @@ RELEASE="$(rpm -E %fedora)"
 # this installs a package from fedora repos
 dnf copr enable yalter/niri
 dnf install yalter/niri
+curl -Lo /etc/yum.repos.d/niri-"${FEDORA_MAJOR_VERSION}".repo https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-"${FEDORA_MAJOR_VERSION}"/niri-"${FEDORA_MAJOR_VERSION}".repo
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
