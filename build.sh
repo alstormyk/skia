@@ -13,9 +13,7 @@ RELEASE="$(rpm -E %fedora)"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf copr enable yalter/niri
-dnf install yalter/niri
-curl -Lo /etc/yum.repos.d/niri-"${FEDORA_MAJOR_VERSION}".repo https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-"${FEDORA_MAJOR_VERSION}"/niri-"${FEDORA_MAJOR_VERSION}".repo
+curl -Lo "https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-"${FEDORA_MAJOR_VERSION}"/yalter-niri-fedora-"${FEDORA_MAJOR_VERSION}".repo" > /etc/yum.repos.d/yalter-niri-fedora-"${FEDORA_MAJOR_VERSION}".repo
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
