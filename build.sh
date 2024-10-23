@@ -3,7 +3,7 @@
 set -ouex pipefail
 
 RELEASE="$(rpm -E %fedora)"
-FEDORA_VERSION
+FEDORA_VERSION=40
 
 
 ### Install packages
