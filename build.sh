@@ -13,7 +13,7 @@ RELEASE="$(rpm -E %fedora)"
 
 # this installs a package from fedora repos
 curl "https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-$RELEASE/yalter-niri-fedora-$RELEASE.repo" > /etc/yum.repos.d/yalter-niri-fedora-$RELEASE.repo
-rpm-ostree install niri
+rpm-ostree install niri qtile-wayland
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
